@@ -4,6 +4,7 @@ $(document).ready(function () {
         document.getElementById("NavLink").style.height = "0%";
     } else {
         $("body").css("display", "none");
+         console.log("display None");
         $.get("https://api.onedrive.com/v1.0/shares/s!AuOxR9BjfloLg5Ndgy8eqXEPchy4YQ/root/content", function (data, status) {
             document.getElementById("Projects").href = data;
         });
@@ -11,6 +12,7 @@ $(document).ready(function () {
     }
 });
 function closeNav() {
+    console.log("displayblock");
     $("body").css("display", "block");
     document.getElementById("NavLink").style.height = "0%";
 }
