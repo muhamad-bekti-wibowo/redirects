@@ -1,6 +1,6 @@
 $(document).ready(function () {
     console.log(window.location.href);
-    if (window.location.href == "https://muhamad-bekti-wibowo.blogspot.com/") {
+    if (window.location.href != "https://muhamad-bekti-wibowo.blogspot.com/") {
         document.getElementById("NavLink").style.height = "0%";
     } else {
         $("body").css("display", "none");
